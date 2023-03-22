@@ -4,11 +4,11 @@ const dbPassword = process.env.DB_PASS //Senha do usuário MongoDB
 
 const connection = async()=>{
     try {
-        const dbConn = await mongoose.connect(
+        const dbConnection = await mongoose.connect(
             `mongodb+srv://${dbUser}:${dbPassword}@LINK` //Link do banco MongoDB
         )
         console.log("Conectado ao banco")
-        return dbConn
+        return dbConnection
     } catch (error){
         console.log(error)
     }

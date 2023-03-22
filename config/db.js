@@ -16,4 +16,4 @@ const connection = async()=>{
 
 connection()
 
-module.exports = conn
+module.exports = connection
